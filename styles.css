@@ -1,0 +1,73 @@
+/*puts the calculator to the center*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/*styles the calculator*/
+#calculator{
+    background-color: grey;
+    width: 450px;
+    height: 550px;
+    padding: 3px;
+    margin-left: 20px;
+}
+
+/*positions the buttons*/
+#buttonsArea{
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /*arranges the buttons into 4 columns*/
+    gap: 3px;/*spreads out the buttons*/
+    position: relative;
+    left: 20px;
+    top: 85px;
+}
+
+/*styles all of the buttons*/
+button{
+    width: 100px;
+    height: 85px;
+    background-color: green;
+    color: aqua;
+    border: 5px;
+    border-color:red blue;
+    border-style: solid double;
+    border-radius: 40px; /*makes the buttons round*/
+    margin: 2px; /*adds space between buttons*/
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer; /*changes cursor when hovering over a button*/
+    font-size: 50px;
+}
+
+/*changes size of the clear button*/
+.clear{
+    font-size: 20px;
+}
+
+/*changes color when hovering over a button*/
+button:hover{
+    background-color: rgb(92, 168, 92);
+}
+
+/*changes color for a moment when button is pressed*/
+button:active{
+    background-color: blue;
+}
+
+/*styles the display bar of the calculator*/
+#displayBar{
+    text-align: right;
+    border-style: solid ;
+    border-color:black;
+    border-width: 5px;
+    position: absolute;
+    margin-left: 25px;
+    top: 110px;
+    width: 390px;
+    height: 55px;
+    background-color: red;
+    font-size: 50px;
+}

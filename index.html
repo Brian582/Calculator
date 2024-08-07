@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator">
+        <input id="displayBar" readonly > <!-- this is so user can't write on the display bar-->
+        <div id="buttonsArea">
+                <button onclick="addToDisplayBar( '(' )">&#40</button>
+                <button onclick="addToDisplayBar( ')' )">&#41</button>
+                <button onclick="addToDisplayBar('.')">.</button>
+                <button onclick="addToDisplayBar('**')">&#94</button>
+                <button onclick="addToDisplayBar('1')">1</button>
+                <button onclick="addToDisplayBar('2')">2</button>
+                <button onclick="addToDisplayBar('3')">3</button>
+                <button onclick="addToDisplayBar('+')">+</button>
+                <button onclick="addToDisplayBar('4')">4</button>
+                <button onclick="addToDisplayBar('5')">5</button>
+                <button onclick="addToDisplayBar('6')">6</button>
+                <button onclick="addToDisplayBar('-')">-</button>
+                <button onclick="addToDisplayBar('7')">7</button>
+                <button onclick="addToDisplayBar('8')">8</button>
+                <button onclick="addToDisplayBar('9')">9</button>
+                <button onclick="addToDisplayBar('*')">X</button>
+                <button onclick="addToDisplayBar('0')">0</button>
+
+                <button onclick="Calculate()">=</button>
+                <button onclick="clearDisplayBar()" class="clear">CLEAR</button>
+                <button onclick="addToDisplayBar('/')">/</button>
+        </div>     
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
