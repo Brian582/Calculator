@@ -6,4 +6,4 @@ In HTML, I developed the calculator, the buttons, and received input from those 
 
 In CSS, I styled the calculator, the buttons, and the display bar.
 
-In JavaScript, I wrote code to evaluate the expression and clear the display bar.
+In JavaScript, I wrote code to evaluate the expression and clear the calculator.
